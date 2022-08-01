@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Query Form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url("https://img.freepik.com/free-vector/low-poly-white-background-design_1017-33204.jpg?w=2000");
+        }
+        .box{
+            width:350px;
+            margin: auto;
+            margin-top: 50px;
+            background: rgb(238,174,202);
+            background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(93,129,172,1) 51%, rgba(112,34,186,1) 100%, rgba(56,21,160,1) 100%);
+            padding: 2.5%;
+            border-radius: 10px;
+            box-shadow: 5px 2px 5px 0px ;
+        }
+        h1{
+            text-align: center;
+            color: white;
+        }
+        input , textarea{
+            width: 100%;
+            margin-top: 0.5%;
+            /* margin-bottom: 0.5%; */
+            padding: 2%;
+            border-radius: 5px;
+        }
+        p{
+            margin-bottom: 3%;
+            color: red;
+        }
+        .submit{
+            font-size: 20px;
+        }
+        .submit:hover{
+            cursor: pointer;
+            color: white;
+            background-color: lightslategray;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" >
+        <h1>QUERY FORM</h1>
+        <form action="" name="form" onsubmit="return validateform()">
+            <label for="fname">Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="abc">
+            <p class="error error1"></p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="abc@gmail.com">
+            <p class="error error2"></p>
+            <label for="number">Number:</label>
+            <input type="tel" id="number" name="number" placeholder="9876543210">
+            <p class="error error3"></p>
+            <label for="query">Query:</label>
+            <textarea name="query" id="query" cols="30" rows="10" placeholder="Write down your query here"></textarea>
+            <input class="submit" type="submit">
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>

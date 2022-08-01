@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url("https://img.freepik.com/free-vector/low-poly-white-background-design_1017-33204.jpg?w=2000");
+}
+.container{
+    width:50%;
+    margin: auto;
+    padding: 4%;
+    text-align: center;
+}
+h1{
+    margin-bottom: 3%;
+    font-size:3rem;
+}
+.question{
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    margin: 2%;
+    text-align: left;
+    padding: 3%;
+    background-color: #e6edefbf;
+    border-style: hidden;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0px black;
+}
+.ques{
+    font-size:1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.plus{
+    float: right;
+}
+.content{
+    text-align:left;
+    background-color: #d7e1e4cd;
+    box-shadow: 2px 2px 2px 2px black;
+    border-radius: 10px;
+    width: 100%;
+    margin: 0% 2% 3%;
+    padding: 2%;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: 0.2;}
+    to {opacity: 1;}
+  }
+#answer1, #answer2,#answer3, #answer4, #answer5  {
+    display: none;
+}
+@media (max-width:1012px)
+{
+    .plus{
+        display: none;
+    }
+    .ques{
+        font-size: 1rem;
+    }
+}
